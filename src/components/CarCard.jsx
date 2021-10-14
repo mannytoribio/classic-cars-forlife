@@ -3,7 +3,7 @@ import React from "react"
 function CarCard70s({ make, model, year, price, transmission, image }) {
   return (
     <div className="cars70s-list">
-      <img> {image}</img>
+      {/* <img> {image}</img> */}
       <small>{make}</small>
       <h3>{model}</h3>
       <div className="car-price">${price}</div>

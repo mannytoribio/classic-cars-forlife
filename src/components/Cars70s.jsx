@@ -17,6 +17,7 @@ const cars70sList = [{
   year: '1973',
   price: 89999.99,
   transmission: 'automatic',
+  image: 
  },{
   id: 3,
   make: 'Maverick', 
@@ -49,19 +50,21 @@ const cars70sList = [{
 //   transmission: 'manual'
 // }]
 
-function Cars70s(props) {
-  <>
-    <h2>70's Classics</h2>
-    <div className="cars70s-list">
-      {cars70sList.map(item => {
-        return (
-          <CarCard
-            key={item.id}
-            item={item} />
-        )
-      })}
-    </div>
-  </>
+function Cars70s() {
+  return(
+    <>
+      <h2>70's Classics</h2>
+      <div className="cars70s-list">
+        {cars70sList.map(item => {
+          return (
+            <CarCard
+              key={item.id}
+              item={item} />
+          )
+        })}
+      </div>
+    </>
+  )
 }
 
 // function Cars80s(props) {

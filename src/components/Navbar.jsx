@@ -1,7 +1,7 @@
 import React from "react"
 import './navbar.css'
 
-function Navbar () {
+export default function Navbar () {
   return (
     <header>
       <nav>
